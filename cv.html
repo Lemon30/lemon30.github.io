@@ -16,7 +16,7 @@
 
     
   </head>
-  <body class="h-100 eigengrau text-white">
+  <body class="h-100 bg-dark text-white">
     <div class="fixed-top row justify-content-center align-items-center", style="text-align:center">
         
         <div class="col">
@@ -24,7 +24,7 @@
                 <a class="navbar-brand mx-auto" href="/"><i class="far fa-lemon"></i></a>
 
                   <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                       <a class="nav-link" href="/">Home</a>
                     </li>
                     <li class="nav-item">
@@ -33,7 +33,7 @@
                                                 The_Answer_to_the_Ultimate_Question_of_Life,_the_Universe,_and_Everything_is_42">42</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="cv.html">CV</a>
+                        <a class="nav-link active" href="cv.html">CV</a>
                       </li>
                   </ul>
               </nav>
@@ -57,19 +57,6 @@
                         <i class="far fa-lemon"></i>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <button type="button" class="btn text-muted" data-container="body" data-toggle="popover" data-placement="bottom">
-                            Changelog
-                        </button>
-                        <!-- loaded popover content -->
-                        <div class="popover-content" id="popover-content" style="display: none;">
-                            <p class="popover-list-item text-muted d-none">03.05.2020: Added a new CV page</p>
-                            <p class="popover-list-item text-muted">03.05.2020: Added changelog popover</p>
-                            <p class="popover-list-item text-muted">02.05.2020: Initial Commit</p>
-                        </div>
-                    </div>
-                </div>
                 
               </div>          
         </div>
@@ -90,26 +77,11 @@
             <span class="text-muted">Contact <a href="https://www.inmotionhosting.com/">InMotion Hosting</a>.</span>
         </div>
     </footer-->
-    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  
-    <script>
-        $(function() {
-            $('[data-toggle="popover"]').popover({
-                    html: true,
-                    container: 'body',
-                    
-                    content: function() {
-                        return $('#popover-content').html();
-                    }
-            });
-        });
-    </script>
-
   </body>
 </html>
