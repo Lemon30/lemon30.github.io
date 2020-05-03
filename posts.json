@@ -1,0 +1,16 @@
+{
+    "posts": [
+        {
+            "author": "Umut Can Özyar",
+            "title": "Test Post",
+            "date": "2020.05.03",
+            "content": "Test post content"
+        },
+        {
+            "author": "Umut Can Özyar",
+            "title": "Test Post 2",
+            "date": "2020.05.03",
+            "content": "Test post content 2"
+        }
+    ]
+}
