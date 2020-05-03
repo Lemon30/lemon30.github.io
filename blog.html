@@ -44,31 +44,9 @@
     <!-- Begin page content -->
     <main role="main" class="container">
         <div class="row justify-content-center align-items-center">
-          <div class="col-12 container justify-content-center">
-            <h5 class="">Education</h5>
-            <h1>fi</h1>
+          <div class="col-12 container justify-content-center cardlist">
+            <h5 class="">Blog</h5>
             <hr class="border">
-            <div class="card text-white eigengrau">
-                <div class="card-body">
-                  <h5 class="card-title bg">Boğaziçi University</h5>
-                  <p class="card-subtitle mb-2 text-muted">2019 - Present</p>
-                  <p class="card-text">Master's Degree, Computer Engineering</p>
-                </div>
-              </div>
-              <div class="card text-white eigengrau">
-                <div class="card-body">
-                  <h5 class="card-title bg">Istanbul Technical University</h5>
-                  <p class="card-subtitle mb-2 text-muted">2013 - 2017</p>
-                  <p class="card-text">Bachelor of Science - BS, Computer Engineering</p>
-                </div>
-              </div>
-              <div class="card text-white eigengrau">
-                <div class="card-body">
-                  <h5 class="card-title bg">TEV İnanç Türkeş High School</h5>
-                  <p class="card-subtitle mb-2 text-muted">2009 - 2013</p>
-                  <p class="card-text">High School</p>
-                </div>
-              </div>
         </div>
         </div>
     </main>
@@ -100,10 +78,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
     
     <script>
-      var jsonData
-      $.getJSON("posts.json", function(json) {
-    console.log(json); // this will show the info it in console
-});
+      $(document).ready(function(){
+        $.getJSON("posts.json", {}, function(data) {
+              console.log("tita1");
+                var $ul = $('.cardlist')
+                $.each(data["posts"], function(idx, item){
+                  console.log(item);
+                    $ul.append('<div class="card text-white eigengrau mb-2" style="border-color: teal;">' 
+                    + '<div class="card-body">'
+                    + '<h5 class="card-title bg">' + item.title + '</h5>'
+                    + '<p class="card-subtitle mb-2 text-muted">' + item.author + ', ' + item.date + '</p>'
+                    + '<hr class="border" style="border: 1px solid teal !important;">'
+                    + '<p class="card-text">' + item.content + '</p>'
+                    + '</div>')
+                })
+            });
+      });
     </script>
   </body>
 </html>
