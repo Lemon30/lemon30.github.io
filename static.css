@@ -5,18 +5,22 @@
 
 
 .fab:hover, .fas:hover, .far:hover{
+    /* https://en.wikipedia.org/wiki/Teal */
     color: teal;
+    /* TODO: Add blog post about teal */
 }
 
 .far.fa-lemon:hover {
+    /* Lemon Lime - https://en.wikipedia.org/wiki/Lime_(color)#Lemon-lime */
     color: rgb(227, 255, 0);
 }
 
 
 
 .eigengrau {
+    /* Eigengrau - https://en.wikipedia.org/wiki/Eigengrau */
     background-color: rgb(22,22,29);
-    
+    /* TODO: Add blog post about eigengrau */
 }
 
 /* Popover */
@@ -39,3 +43,7 @@
 .bs-popover-auto[x-placement^="bottom"] > .arrow::after, .bs-popover-bottom > .arrow::after {
     border-bottom-color: teal;
 }
+
+body {
+    padding-top: 70px;
+  }
